@@ -195,21 +195,25 @@ After using the program, your project folder will look something like this:
 ```
 .
 ├── tinynn_executable // The compiled C program
+├── data/ // Place your input CSV files here
+│ └── sample_input.csv
 ├── models/ // Managed directory for all usable models
 │ ├── generated_model/ // A model created by the generator
 │ │ ├── architecture.txt
 │ │ ├── layer_0_weights.csv
 │ │ └── ...
-│ └── my_first_model/ // A model you imported
+│ └── my_model/ // A model you imported
 │ ├── architecture.txt
 │ └── ...
-├── data/ // Place your input CSV files here
-│ └── sample_input.csv
+├── src/ // all the .c and .h source files
+| ├── main.c
+| ├── model.c
+| ├── model.h
+│ └── ...
 ├── pytorch_model/ // The raw output from the Python export script
 │ ├── architecture.txt
 │ └── ...
-├── export_from_pytorch.py // The Python script for exporting models
-└── ... (all the .c and .h source files)
+└──  export_from_pytorch.py // The Python script for exporting models
 ```
 ---
 
