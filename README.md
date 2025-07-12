@@ -192,6 +192,7 @@ To use it for your own models, you would typically:
 ## 📂 Project Directory Structure
 
 After using the program, your project folder will look something like this:
+```
 .
 ├── tinynn_executable // The compiled C program
 ├── models/ // Managed directory for all usable models
@@ -209,7 +210,7 @@ After using the program, your project folder will look something like this:
 │ └── ...
 ├── export_from_pytorch.py // The Python script for exporting models
 └── ... (all the .c and .h source files)
-
+```
 ---
 
 ## 🔧 How to Compile
